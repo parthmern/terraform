@@ -15,3 +15,9 @@ variable "root_volume_type" {
     default = "gp2"
     description = "Type of the root volume"
 }
+
+variable "env" {
+    type = string
+    default = "dev"
+    description = "Environment (dev, prod, etc.)"
+}
