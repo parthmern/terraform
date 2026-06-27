@@ -49,8 +49,8 @@ resource aws_instance my_instance{
     # count = 2
     
     for_each = tomap({
-        #instace1 = "t2.micro"
-        instace2 = "t2.small"
+        instace1 = "t2.micro"
+        # instace2 = "t2.small"
     })
 
     instance_type = each.value
@@ -70,5 +70,5 @@ resource aws_instance my_instance{
 } 
 
 # import resource, created in aws console, into terraform state file
-resource "aws_instance" "imported_instance" {
-}
+# resource "aws_instance" "imported_instance" {
+# }
